@@ -8,10 +8,11 @@ $ pip3 install pytube && pip3 install moviepy
 ```
 2. Clone the repo 
 ```
-$ git clone https://github.com/joshua-noel/CodeRollProof.git
+$ git clone https://github.com/joshua-noel/YT-Downloader.git
 ```
 3. cd into the cloned repository and run 'converter.py'
 ```
-$ cd YT-Downloader && ./converter.py
+$ cd YT-Downloader
+$ ./converter.py
 ```
 4. Follow the on screen instructions
