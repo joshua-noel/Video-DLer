@@ -1,19 +1,15 @@
-# YT-Downloader
-Simple python script to download YouTube videos as either mp4s or mp3s. This script requires two non standard libraries: pytube and moviepy
+# Multiplatform Video Downloader
+This downloader is designed to download videos from both twitter and youtube with more platforms to come.
 
-## Usage
-1. Install [pytube](https://python-pytube.readthedocs.io/en/latest/) and [moviepy](https://zulko.github.io/moviepy/)
-```
-$ pip3 install pytube 
-$ pip3 install moviepy
-```
-2. Clone the repo 
-```
-$ git clone https://github.com/joshua-noel/YT-Downloader.git
-```
-3. cd into the cloned repository and run 'converter.py'
-```
-$ cd YT-Downloader
-$ ./converter.py
-```
-4. Follow the on screen instructions
+## Installation
+1. Clone the repository
+`git clone https://github.com/joshua-noel/Video-DLer.git`
+
+2. Install the required dependenices
+`pip install -r dependencies.txt`
+
+3. Run the downloader
+`./downloader.py`
+
+## Contributing
+This project is not currently open for contributions
