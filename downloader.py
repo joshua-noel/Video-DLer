@@ -11,12 +11,11 @@ import sys
 import subprocess
 
 global url
-global platform
 global location 
 
 location = os.getcwd() + "\\Downloads" #Location where downloaded videos go
 
-def youtubeDL(): #Downlooder for youtube videos
+def youtubeDL(): #Downlooder function
     subprocess.run(["cls"], shell= True)
     url = input("Please enter the youtube video url:\n")
     fileType = ""
@@ -30,15 +29,15 @@ def youtubeDL(): #Downlooder for youtube videos
         youtubeDL()
 
     except pytube.exceptions.VideoUnavailable:
-        input("Invalid url, press any key to continue...")
+        input("Video currently unavailable, press any key to continue...")
         youtubeDL()
 
     except pytube.exceptions.ExtractError:
-        input("Invalid url, press any key to continue...")
+        input("An error has occured, press any key to continue...")
         youtubeDL()
 
     except pytube.exceptions.HTMLParseError:
-        input("Invalid url, press any key to continue...")
+        input("An error has occured, press any key to continue...")
         youtubeDL()   
     
     title = safe_filename(yt.title)
@@ -63,24 +62,15 @@ def youtubeDL(): #Downlooder for youtube videos
 
     main()
 
-
-def twitterDL(): #Downlooder for twitter videos
-    subprocess.run(["cls"], shell= True)
-
-    main()
-
 def main():
     subprocess.run(["cls"], shell= True)
-    platform = input("Please choose a platform to download from (enter 0 to quit):\n(1) Youtube\n(2) Twitter\n")
+    option = input("Please choose an option:\n(1) Download a video\n(2) Exit\n")
     subprocess.run(["mkdir", "downloads"], shell= True)
 
-    if platform == "1":
+    if option == "1":
         youtubeDL()
-    
-    elif platform == "2":
-        twitterDL()
 
-    elif platform == "0":
+    elif option == "2":
         sys.exit()
 
     else:
