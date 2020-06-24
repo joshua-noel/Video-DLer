@@ -26,19 +26,19 @@ def youtubeDL(): #Downlooder function
 
     except pytube.exceptions.RegexMatchError:
         input("Invalid url, press any key to continue...")
-        youtubeDL()
+        main()
 
     except pytube.exceptions.VideoUnavailable:
         input("Video currently unavailable, press any key to continue...")
-        youtubeDL()
+        main()
 
     except pytube.exceptions.ExtractError:
         input("An error has occured, press any key to continue...")
-        youtubeDL()
+        main()
 
     except pytube.exceptions.HTMLParseError:
         input("An error has occured, press any key to continue...")
-        youtubeDL()   
+        main()   
     
     title = safe_filename(yt.title)
 
