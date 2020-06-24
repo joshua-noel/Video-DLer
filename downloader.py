@@ -15,7 +15,7 @@ global location
 
 location = os.getcwd() + "\\Downloads" #Location where downloaded videos go
 
-def youtubeDL(): #Downloder function
+def youtubeDL(): #Downloader function
     subprocess.run(["cls"], shell= True)
     url = input("Please enter the youtube video url:\n")
     fileType = ""
