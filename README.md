@@ -1,5 +1,5 @@
-# Multiplatform Video Downloader
-This downloader is designed to download videos from both twitter and youtube with more platforms to come.
+# Youtube Video Downloader
+This downloader is designed to download videos from youtube.
 
 ## Installation
 1. Clone the repository
