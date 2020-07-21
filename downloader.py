@@ -10,9 +10,6 @@ import os
 import sys
 import subprocess
 
-global url
-global location 
-
 location = os.getcwd() + "\\Downloads" #Location where downloaded videos go
 
 def youtubeDL(): #Downloader function
